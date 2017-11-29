@@ -1,3 +1,5 @@
+package cs245PA08;
+
 /**
  * @author Anthony Panisales
  */
@@ -37,6 +39,7 @@ public class GraphAdjMatrix implements Graph {
 	}
 	
 	public void topologicalSort() {
+		System.out.print("Topological Sort: ");
 		int[] incident = new int[edges.length];
 		for (int i = 0; i < edges.length; i++)
 			incident[i] = indegree(i);
